@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-purple-600/90 to-purple-900/90 backdrop-blur-md">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-3 md:grid-cols-3  gap-10">
           <div className="space-y-4">
             <Link to="/" className="text-3xl font-bold text-white hover:scale-105 transition-transform inline-block">
              Echoshop
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div>
+          <div className='pl-20'>
             <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {['Home', 'Products', 'About Us', 'Contact'].map((item) => (
@@ -43,21 +43,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-6">Customer Service</h4>
-            <ul className="space-y-3">
-              {['FAQ', 'Shipping Policy', 'Returns & Refunds', 'Privacy Policy'].map((item) => (
-                <li key={item}>
-                  <Link 
-                    to={`/${item.toLowerCase().replace(' ', '-')}`} 
-                    className="text-white/80 hover:text-white transition-colors inline-block hover:translate-x-2 transition-transform"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          
           
           <div>
             <h4 className="text-lg font-semibold text-white mb-6">Newsletter</h4>

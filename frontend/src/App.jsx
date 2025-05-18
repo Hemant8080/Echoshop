@@ -19,6 +19,8 @@ import ForgetPassword from "./pages/ForgetPassword";
 import ResetPassword from "./pages/ResetPassword";
 import OrderSuccess from "./components/OrderSuccess";
 import Orders from "./components/Orders";
+import AboutUs from "./components/AboutUs";
+import Contact from "./components/Contact";
 
 // Protected Route Component
 const ProtectedRoute = ({ children }) => {
@@ -191,6 +193,22 @@ function App() {
             <ProtectedRoute>
               <Orders />
             </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/about-us"
+          element={
+            <Layout>
+              <AboutUs />
+            </Layout>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Layout>
+              <Contact />
+            </Layout>
           }
         />
       </Routes>
