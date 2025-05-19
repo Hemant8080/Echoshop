@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className='pl-20'>
+          <div >
             <h4 className="text-lg font-semibold text-white mb-6">Quick Links</h4>
             <ul className="space-y-3">
               {['Home', 'Products', 'About Us', 'Contact'].map((item) => (
